@@ -94,25 +94,25 @@ function clean(){
 
 function calc(){
     if(isAddition === true){
-        a = addition(Number(a), Number(b));
+        a = String(addition(Number(a), Number(b)));
         resultat.texte.value = a;
         b = "";
         isAddition = false;
     }
     if(isSoustraction === true){
-        a = soustraction(Number(a), Number(b));
+        a = String(soustraction(Number(a), Number(b)));
         resultat.texte.value = a;
         b = "";
         isSoustraction = false;
     }
     if(isMultiplication === true){
-        a = multiplication(Number(a), Number(b));
+        a = String(multiplication(Number(a), Number(b)));
         resultat.texte.value = a;
         b = "";
         isMultiplication = false;
     }
     if(isDivision === true){
-        a = division(Number(a), Number(b));
+        a = String(division(Number(a), Number(b)));
         resultat.texte.value = a;
         b = "";
         isDivision = false;
