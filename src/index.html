@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Calculatrice</title>
+	</head>
+	<body>
+			<h2 class="title">Calculatrice</h2>
+			<script src="app.js"></script>
+			<form>
+					
+					<table>
+						<tbody>
+							<tr>
+								<td colspan="4">
+								<input id="resultat" class="resultat" name="texte" size="20" type="text" readonly />
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<input value="7" onclick="ajouteChiffre(7)" type="button" class="mainbutton" />
+								</td>
+								<td>
+								<input value="8" onclick="ajouteChiffre(8)" type="button" class="mainbutton" />
+								</td>
+								<td>
+								<input value="9" onclick="ajouteChiffre(9)" type="button" class="mainbutton" />
+								</td>
+								<td>
+								<input value="+" onclick="setAddition()" type="button" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<input value="4" onclick="ajouteChiffre(4)" type="button" class="mainbutton" />
+								</td>
+								<td>
+								<input value="5" onclick="ajouteChiffre(5)" type="button" class="mainbutton" />
+								</td>
+								<td>
+								<input value="6" onclick="ajouteChiffre(6)" type="button" class="mainbutton" />
+								</td>
+								<td>
+								<input value="-" onclick="setSoustraction()" type="button" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<input value="1" onclick="ajouteChiffre(1)" type="button" class="mainbutton" />
+								</td>
+								<td>
+								<input value="2" onclick="ajouteChiffre(2)" type="button" class="mainbutton" />
+								</td>
+								<td>
+								<input value="3" onclick="ajouteChiffre(3)" type="button" class="mainbutton" />
+								</td>
+								<td>
+								<input value="*" onclick="setMultiplication()" type="button" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<input value="0" onclick="ajouteChiffre(0)" type="button" class="mainbutton" />
+								</td>
+								<td>
+								<input value="." onclick="ajouteChiffre('.')" type="button" class="mainbutton" />
+								</td>
+								<td>
+								<input value="C" onclick="clean()" type="button" class="mainbutton" />
+								</td>
+								<td>
+								<input value="/" onclick="setDivision()" type="button" />
+								</td>
+							</tr>
+							<tr>
+								<!-- <td colspan="3">
+								<input name="affichage" size="15" type="text" readonly />
+								</td> -->
+								<td>
+									<input value="²" onclick="setPuissance()" type="button" />
+								</td>
+								<td>
+									<input value="¹" onclick="setRacine()" type="button" />
+								</td>
+								<td>
+								<input value="=" onclick='calc()' type="button" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+			</form>
+	</body>
+</html>

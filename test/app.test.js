@@ -67,12 +67,12 @@ describe('Tests de la partie scientifique', function() {
     });
     it('2. Calcul de la racine carré', function(done) {
         let c1 = new Calculatrice();
-        expect(c1.carre(16)).to.equal(4);
+        expect(c1.racine(16)).to.equal(4);
         done();
     });
-    it('3. Calcul de la racine carré', function(done) {
-        let c1 = new Calculatrice();
-        expect(c1.carre(16)).to.equal(4);
-        done();
-    });
+    // it('3. Calcul de la racine carré', function(done) {
+    //     let c1 = new Calculatrice();
+    //     expect(c1.racine(16)).to.equal(4);
+    //     done();
+    // });
 });
