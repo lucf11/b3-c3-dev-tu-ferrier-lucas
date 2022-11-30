@@ -42,4 +42,37 @@ describe('Tests des fonctions arithmétiques', function() {
         expect(c1.multiplication(-4,-3)).to.equal(12);
         done();
     });
+    it('9. Division', function(done) {
+        let c1 = new Calculatrice();
+        expect(c1.division(20,5)).to.equal(4);
+        done();
+    });
+    it('10. Division avec un négatif', function(done) {
+        let c1 = new Calculatrice();
+        expect(c1.division(20,-5)).to.equal(-4);
+        done();
+    });
+    it('11. Division avec deux négatif', function(done) {
+        let c1 = new Calculatrice();
+        expect(c1.division(-20,-5)).to.equal(4);
+        done();
+    });
+});
+
+describe('Tests de la partie scientifique', function() {
+    it('1. Calcul du carré', function(done) {
+        let c1 = new Calculatrice();
+        expect(c1.carre(4)).to.equal(16);
+        done();
+    });
+    it('2. Calcul de la racine carré', function(done) {
+        let c1 = new Calculatrice();
+        expect(c1.carre(16)).to.equal(4);
+        done();
+    });
+    it('3. Calcul de la racine carré', function(done) {
+        let c1 = new Calculatrice();
+        expect(c1.carre(16)).to.equal(4);
+        done();
+    });
 });
